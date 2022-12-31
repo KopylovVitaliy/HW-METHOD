@@ -38,12 +38,12 @@ public class Main {
         } else {
             System.out.println("Введите корректные данные для продолжения");
         }
-        return clientDeviceYear;
+        return client;
     }
 
     public static void task2() {
         System.out.println("Задача 2");
-        int clientOS = 1;
+        int clientOS = 0;
         int currentYear = 2022;
         int result = applicationSelection(clientOS, currentYear);
 

@@ -21,16 +21,16 @@ public class Main {
 
     }
 
-    public static int applicationSelection(int client, int clientDeviceYear) {
+    public static int applicationSelection(int clientOS, int currentYear) {
 
-        if (client == 0) {
-            if (clientDeviceYear >= 2015) {
+        if (clientOS == 0) {
+            if (currentYear >= 2015) {
                 System.out.println("Установите версию приложения для iOS по ссылке");
             } else {
                 System.out.println("Установите облегченную версию приложения для iOS по ссылке");
             }
-        } else if (client == 1) {
-            if (clientDeviceYear >= 2015) {
+        } else if (clientOS == 1) {
+            if (currentYear >= 2015) {
                 System.out.println("Установите версию приложения для Android по ссылке");
             } else {
                 System.out.println("Установите облегченную версию приложения для Android по ссылке");
@@ -38,7 +38,7 @@ public class Main {
         } else {
             System.out.println("Введите корректные данные для продолжения");
         }
-        return client;
+        return clientOS;
     }
 
     public static void task2() {
